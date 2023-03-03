@@ -11,8 +11,7 @@ pipeline {
 
         stage('Build Maven Project') {
           steps {
-            sh '''cd C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\JenkinsReposit_main\\Mock
-mvn compile test package'''
+            sh 'mvn compile test package'
           }
         }
 
