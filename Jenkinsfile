@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Maven Project') {
           steps {
-            sh '''mvn -f Mock/pom.xml package
+            sh '''mvn -f Mock/pom.xml
 mvn compile'''
           }
         }
